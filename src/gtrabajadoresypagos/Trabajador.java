@@ -110,5 +110,42 @@ public class Trabajador {
     public void setTrabaja_noche(boolean trabaja_noche) {
         this.trabaja_noche = trabaja_noche;
     }
+    public double calcularDescuentoPension() {
+        switch (tipo_pension) {
+            case "Integra":
+                return sueldo_base * 0.121;
+            case "Prima":
+                return sueldo_base * 0.125;
+            case "Habitat":
+                return sueldo_base * 0.127;
+            case "ONP":
+                return sueldo_base * 0.13;
+            default:
+                return 0;
+        }
+    }
+     public double calcularBonificaciones() {
+        double bono = 0;
+
+        // SOLO régimen 728 tiene beneficios
+        if (regimen.equals("728")) {
+
+            if (tiene_hijos) {
+                bono += 100;
+            }
+
+            if (trabaja_noche) {
+                bono += 150;
+            }
+
+            bono += 200; // pacto colectivo
+        }
+
+        return bono;
+    }
+
+    public double calcularSueldoFinal() {
+        return sueldo_base - calcularDescuentoPension() + calcularBonificaciones();
+    }
     
 }

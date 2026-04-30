@@ -67,9 +67,11 @@ public class Gtrabajadoresypagos {
     lista.add(t);
 
     System.out.println("Trabajador agregado correctamente");
+    
                 
                 
             }
+            
         }while (opcion != 4);
     }
 
