@@ -60,7 +60,13 @@ public class Trabajador {
     }
 
     public void setNum_doc(String num_doc) {
+     if (tipo_doc.equals("DNI") && num_doc.length() == 8) {
+      this.num_doc = num_doc;
+    } else if (tipo_doc.equals("Residencia") && num_doc.length() == 11) {
         this.num_doc = num_doc;
+    } else {
+        System.out.println("Numero de documento invalido");
+    }
     }
 
     public String getRegimen() {
