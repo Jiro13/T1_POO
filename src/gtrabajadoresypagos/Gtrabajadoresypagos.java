@@ -18,7 +18,7 @@ public class Gtrabajadoresypagos {
      */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        Trabajador t = new Trabajador();
+        ArrayList<Trabajador> lista = new ArrayList<>();
 
         int opcion;
 
