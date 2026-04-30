@@ -67,12 +67,27 @@ public class Gtrabajadoresypagos {
     lista.add(t);
 
     System.out.println("Trabajador agregado correctamente");
-    
+         
                 
-                
+            }
+            else if (opcion==2){
+                for (int i = 0; i < lista.size(); i++) {
+        
+
+        System.out.println("Nombre: " + t.getNombre());
+        System.out.println("Documento: " + t.getNum_doc());
+            }
+            }
+            else if (opcion==3){
+                for (int i = 0; i < lista.size(); i++) {
+        
+
+        System.out.println("Nombre: " + t.getNombre());
+        System.out.println("Sueldo final: " + t.calcularSueldoFinal());
+            }
             }
             
         }while (opcion != 4);
     }
-
+        
 }

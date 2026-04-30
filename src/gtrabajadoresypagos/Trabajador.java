@@ -138,7 +138,7 @@ public class Trabajador {
                 bono += 150;
             }
 
-            bono += 200; // pacto colectivo
+            bono += 200; 
         }
 
         return bono;
