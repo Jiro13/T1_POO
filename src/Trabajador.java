@@ -48,7 +48,11 @@ public class Trabajador {
     }
 
     public void setTipo_doc(String tipo_doc) {
-        this.tipo_doc = tipo_doc;
+     if (tipo_doc.equals("DNI") || tipo_doc.equals("Residencia")) {
+     this.tipo_doc = tipo_doc;
+    } else {
+        System.out.println("Tipo de documento invalido");
+    }
     }
 
     public String getNum_doc() {

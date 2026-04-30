@@ -30,7 +30,8 @@ public class Gtrabajadoresypagos {
             System.out.println("4. Salir");
             System.out.print("Opcion: ");
             opcion = sc.nextInt();
-            sc.nextLine(); // limpiar buffer
+            sc.nextLine(); 
+            
         }while (opcion != 4);
     }
 
