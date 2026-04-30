@@ -2,12 +2,14 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
+package gtrabajadoresypagos;
 
 /**
  *
  * @author LENOVO
  */
 public class Trabajador {
+    
    private String nombre;
    private String apellido_paterno;
    private String apellidos_materno;
@@ -108,6 +110,5 @@ public class Trabajador {
     public void setTrabaja_noche(boolean trabaja_noche) {
         this.trabaja_noche = trabaja_noche;
     }
-    
     
 }

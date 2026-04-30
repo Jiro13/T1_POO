@@ -18,7 +18,7 @@ public class Gtrabajadoresypagos {
      */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        
+        Trabajador t = new Trabajador();
 
         int opcion;
 
@@ -31,7 +31,11 @@ public class Gtrabajadoresypagos {
             System.out.print("Opcion: ");
             opcion = sc.nextInt();
             sc.nextLine(); 
-            
+            if (opcion==1){
+                System.out.println("Ingrese el nombre: ");
+                
+                
+            }
         }while (opcion != 4);
     }
 
